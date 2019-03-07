@@ -1,0 +1,32 @@
+.page-header{ 
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    
+    /*background-attachment: fixed;
+
+    
+    background-position: center center;*/
+
+    .presentation-subtitle.lineasub{
+
+        
+        border: 2px solid rgba(255, 255, 255, 0.35);
+        border-top: 0;
+        border-left: 0;
+            /*border-top: 2px solid black;
+            border-bottom: 2px solid black;
+
+            height: 10px;
+            background-color: black;*/
+
+            .h7{
+                font-family: "Andalus";
+                font-style:italic;
+                font-weight:bold;
+            }
+    }
+}
+

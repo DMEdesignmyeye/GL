@@ -1,0 +1,181 @@
+<nav class="navbar navbar-expand-lg fixed-top nav-down " color-on-scroll="500">
+    <div class="container" style="margin-left: 20%">
+        <div class="navbar-translate">
+            <div class="navbar-header">
+                <!-- <a class="navbar-brand" [routerLink]="['/presentation']">G & L Asociados</a>-->
+            </div>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+                data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/presentation']">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/examples/discover']">Visión</a>
+                </li>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Areas</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/examples/area1']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Administrativo</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area2']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Civil</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area3']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Comercial</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area4']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Derecho constitucional</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area5']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Familia</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area6']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Laboral</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area7']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Propiedad Intelectual</a>
+                        <!--     <a class="dropdown-item" [routerLink]="['/examples/ecommerce']"><i class="nc-icon nc-send"></i>&nbsp; Ecommerce</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/landing']"><i class="nc-icon nc-spaceship"></i>&nbsp; Landing</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/login']"><i class="nc-icon nc-lock-circle-open"></i>&nbsp; Login</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/productpage']"><i class="nc-icon nc-album-2"></i>&nbsp; Product Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/profile']"><i class="nc-icon nc-single-02"></i>&nbsp; Profile</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/register']"><i class="nc-icon nc-bookmark-2"></i>&nbsp; Register</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/search']"><i class="nc-icon nc-zoom-split"></i>&nbsp; Search</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/settings']"><i class="nc-icon nc-settings-gear-65"></i>&nbsp; Settings</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/twitter']"><i class="nc-icon nc-tie-bow"></i>&nbsp; Twitter</a>-->
+                    </div>
+                </div>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>Novedades</div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
+                        <a class="dropdown-item" [routerLink]="['/examples/area8']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Fallos destacados</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/area9']"><i
+                                class="nc-icon nc-bank"></i>&nbsp; Noticias</a>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/examples/teams']">Nosotros</a>
+
+                <li class="nav-item">
+                    <a class="nav-link" (click)="open(Login, '')">Contácto</a>
+                </li>
+                
+<ng-template #Login let-c="close" let-d="dismiss">
+    <div class="modal-header modal-register no-border-header text-center">
+        <button type="button" class="close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button> 
+        <h3 class="modal-title text-center">Contáctenos</h3>
+        <p>Escríbanos su consulta</p>
+    </div>
+   <form name="form" (ngSubmit)="f.form.valid && onSubmit(f.value)" #f="ngForm" novalidate>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+            <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+                <div *ngIf="firstName.errors.required">Es obligatorio ingresar su Nombre</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                <div *ngIf="email.errors.required">El Email es obligatrorio</div>
+                <div *ngIf="email.errors.email">Es obligatorio ingresar su Email</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Asunto</label>
+            <input type="text" class="form-control" name="asunto" [(ngModel)]="model.asunto" #asunto="ngModel" [ngClass]="{ 'is-invalid': f.submitted && asunto.invalid }" required asunto >
+        </div>
+        <div class="form-group">
+            <label class="control-label">Escriba su mensaje</label>
+            <textarea class="form-control" cols="30" rows="6" name="mensaje" [(ngModel)]="model.mensaje" #mensaje="ngModel" [ngClass]="{ 'is-invalid': f.submitted && mensaje.invalid }" required mensaje></textarea>
+        </div> 
+        
+        <div class="row">
+                                       
+            <div class="form-group">
+                <button class="btn btn-rose pull-right">Enviar</button>
+            </div>
+        </div>
+
+    </div> 
+</form>
+</ng-template>
+               <!--  <ng-template #Login let-c="close" let-d="dismiss">
+                    <div class="card card-login card-plain">
+                        <div class="modal-header justify-content-center">
+                            <button type="button" class="close" (click)="d('Cross click')">
+                                <i class="now-ui-icons ui-1_simple-remove"></i>
+                            </button>
+                            <div class="header header-primary text-center">
+                                <button type="button" class="btn btn-neutral btn-round btn-block btn-simple"> Contactenos
+                                </button>
+                            </div>
+                            <div class="logo-container">
+                                <img src="src/assets/img/logo.png" alt=""
+                                    style="box-shadow: none !important;width: 13% !important;">
+                            </div>
+                        </div>
+
+
+                        <div class="modal-body">
+
+                            <form name="form" (ngSubmit)="f.form.valid && onSubmit(f.value)" #f="ngForm" novalidate>
+                                <div class="card-body">
+                            
+                                       <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName">Nombre</label>
+                                                    <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+                                                    <div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+                                                        <div *ngIf="firstName.errors.required">Es obligatorio ingresar su Nombre</div>
+                                                    </div>
+                                                </div>
+             
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                                                    <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                                                        <div *ngIf="email.errors.required">El Email es obligatrorio</div>
+                                                        <div *ngIf="email.errors.email">Es obligatorio ingresar su Email</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="form-group">
+                                            <label class="control-label">Asunto</label>
+                                            <input type="text" class="form-control" name="asunto" [(ngModel)]="model.asunto" #asunto="ngModel" [ngClass]="{ 'is-invalid': f.submitted && asunto.invalid }" required asunto >
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Escriba su mensaje</label>
+                                            <textarea class="form-control" cols="30" rows="6" name="mensaje" [(ngModel)]="model.mensaje" #mensaje="ngModel" [ngClass]="{ 'is-invalid': f.submitted && mensaje.invalid }" required mensaje></textarea>
+                                        </div>    
+            
+                                    <div class="row">
+                                       
+                                        <div class="col-md-6">
+                                            <button class="btn btn-rose pull-right">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </ng-template> -->
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
