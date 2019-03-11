@@ -9,7 +9,7 @@ import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
 import { ImageUploadModule } from '../shared/image-upload/image-upload.module';
-import { NgbdModalBasic } from './teams/teams.component';
+// import { NgbdModalBasic } from './teams/teams.component';
 import { ExamplesComponent } from './examples.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
@@ -54,6 +54,7 @@ import { TeamsComponent } from './teams/teams.component';
         }),
         ImageUploadModule
     ],
+    
     declarations: [
         ExamplesComponent,
         AboutusComponent,
@@ -84,7 +85,7 @@ import { TeamsComponent } from './teams/teams.component';
         Area8Component,
         Area9Component,
         TeamsComponent,
-        NgbdModalBasic
+        // NgbdModalBasic
         //ContactusComponent,
     ]
 })
