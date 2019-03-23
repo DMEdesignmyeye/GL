@@ -5,7 +5,8 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Nosotros</h2>
-                    <h5 class="description">dedicado a la defensa de los derechos del trabajador. Nuestro Estudio se conforma de profesionales altamente capacitados y estableciéndose en diversas áreas
+                    <h5 class="description">dedicado a la defensa de los derechos del trabajador. Nuestro Estudio se
+                        conforma de profesionales altamente capacitados y estableciéndose en diversas áreas
 
                     </h5>
                 </div>
@@ -15,11 +16,12 @@
                 <div class="col-md-4" style="max-width: 25%;">
                     <div class="card card-profile card-plain">
                         <div class="card-body">
-                            <div class="card-avatar" (click)="open(Notice, '')">
+                            <div class="card-avatar" (click)="open(Notice, '')" id="lucas">
                                 <a>
-                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%" alt="...">
+                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%"
+                                        alt="...">
                                     <h4 class="card-title">Lucas Antonio Farías
-                                        </h4>
+                                    </h4>
                                 </a>
                             </div>
                             <p class="card-description text-center">
@@ -39,22 +41,25 @@
                                     class="fa fa-twitter" aria-hidden="true"></i></button> 
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col-md-4" style="max-width: 25%;">
                     <div class="card card-profile card-plain">
                         <div class="card-body">
-                            <div class="card-avatar" (click)="open(Notice, '')">
+                            <div class="card-avatar" (click)="open(Notice, '')" id="Fernando">
                                 <a>
-                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%" alt="...">
-                                    <h4 class="card-title">Lucas Antonio Farías
-                                        </h4>
+                                    <img src="./assets/img/faces/fer.jpg" style="background-position-x: 3%" alt="...">
+                                    <h4 class="card-title">Fernando Cesaretti
+                                    </h4>
                                 </a>
                             </div>
                             <p class="card-description text-center">
-                                DNI: N°37.951.852<br>
-                                Fecha de Nacimiento: <br>27 de Octubre de 1993<br>
-                                E-mail: <br> <a href="mailto:lucasantoniofarias@gmail.com">lucasantoniofarias@gmail.com</a>
+                                Ciudad: Córdoba - Córdoba <br>
+                                Teléfono: (3537) 667744 <br>
+                                E-mail: <br>fernandocesaretti0@gmail.com
+                                Código postal: 5000
+                                MP: 1-39.675
+
 
                             </p>
                         </div>
@@ -76,15 +81,16 @@
                         <div class="card-body">
                             <div class="card-avatar" (click)="open(Notice, '')">
                                 <a>
-                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%" alt="...">
-                                    <h4 class="card-title">Lucas Antonio Farías
-                                        </h4>
+                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%"
+                                        alt="...">
+                                    <h4 class="card-title"> Luis Eduardo Martinez Golletti
+                                    </h4>
                                 </a>
                             </div>
                             <p class="card-description text-center">
                                 DNI: N°37.951.852<br>
-                                Fecha de Nacimiento: <br>27 de Octubre de 1993<br>
-                                E-mail: <br> <a href="mailto:lucasantoniofarias@gmail.com">lucasantoniofarias@gmail.com</a>
+                                Fecha de Nacimiento: <br>11 de noviembre de 1975<br>
+                                E-mail: <br>martinezg@arnet.com.ar
 
                             </p>
                         </div>
@@ -106,9 +112,10 @@
                         <div class="card-body">
                             <div class="card-avatar" (click)="open(Notice, '')">
                                 <a>
-                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%" alt="...">
+                                    <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" style="background-position-x: 3%"
+                                        alt="...">
                                     <h4 class="card-title">Lucas Antonio Farías
-                                        </h4>
+                                    </h4>
                                 </a>
                             </div>
                             <p class="card-description text-center">
@@ -130,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-  
+
             </div>
         </div>
     </div>
@@ -138,13 +145,13 @@
 <ng-template #Notice let-c="close" let-d="dismiss">
     <div class="modal-header">
         <h6 class="modal-title">Lucas Antonio Farias</h6>
-         
+
 
         <button type="button" class="close" (click)="d('Cross click')">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" id="lucas">
         <div class="instruction">
             <div class="row">
                 <!-- <div class="col-md-8"> -->
@@ -331,10 +338,182 @@
         </div> -->
         <!-- <p>If you have more questions, don't hesitate to contact us or send us a tweet @creativetim. We're here to help!</p> -->
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-link" (click)="c('Close click')">Descargar</button>
-    </div>
 </ng-template>
+    
+<!-- <ng-template #Notice let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h6 class="modal-title">Lucas Antonio Farias</h6>
+
+
+        <button type="button" class="close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<div class="modal-body" id="Fernando">
+    <div class="instruction">
+        <div class="row">
+
+            <h6> DATOS PERSONALES</h6><br>
+
+            <p> &nbsp;Domicilio: San Lorenzo 298 3º “A”<br>
+
+                &nbsp;Ciudad: Córdoba - Córdoba <br>
+
+                &nbsp;Teléfono: (3537) 667744 <br>
+
+                &nbsp;Código postal: 5000<br>
+
+                &nbsp;MP: 1-39.675<br>
+
+                &nbsp;E-mail: <a href="fernandocesaretti0@gmail.com">fernandocesaretti0@gmail.com</a>. <br></p>
+
+        </div>
+        <div class="row">
+            <h6> OCUPACION PROFESIONAL </h6><br>
+
+            <p>&nbsp;• SOCIO ABOGADO en ESTUDIO JURIDICO GIORDANO LERENA & ASOCIADOS
+
+                &nbsp;Corro 245 – Piso 8° - Of. “C” – Córdoba Capital
+
+                &nbsp;Tel./Fax: (0351) 4262954 – <a href="estudiogiordanolerena@gmail.com">
+                    estudiogiordanolerena@gmail.com</a> </p>
+
+
+        </div>
+        <div class="row">
+            <h6> Formacion Universitaria</h6><br>
+
+            <p> &nbsp;• Abogado Universidad Nacional de Córdoba 2009 – 2014.  (completa en 6 años, promedio Gral. 8,29) .</p>
+
+            <p> &nbsp;• Notariado Universidad Empresarial Siglo XXI (completa en 1 año, promedio Gral. 9,38) Córdoba 2015.</p>
+
+            <p> &nbsp;• Adscripto  de la Cátedra de Derecho Procesal Constitucional Universidad Nacional de Córdoba, Facultad de Derecho (conforme resolución de Secretaria Académica  Nº ciento noventa y cinco (195) del año 2017 (en curso).</p>
+            <p> &nbsp;• Diplomatura de Posgrado en Derecho de la Seguridad Social y del Trabajo Universidad Nacional de Córdoba, Facultad de Derecho 2017 - 2018 (Finalizada).</p>
+
+            <br>
+        </div>
+        <div class="row">
+            <h6> 
+                Formación Secundaria 
+                </h6><br>
+
+            <p> &nbsp;• Bachiller orientado en Economía y gestión de las organizaciones, con especialidad en gestión administrativa.
+                Instituto Privado Dalmacio Vélez Sarsfield – Justiniano Posse , egresado 	en año 2008.
+            </p>
+            <br>
+        </div>
+        <div class="row">
+            <h6>Experiencias laboral</h6>
+            <br>
+            <p> &nbsp;•	Asociado
+                Estudio Giordano Lerena y Asociados (Córdoba, Argentina)
+                03/02/2016 - a la Actualidad. Actividades desempeñadas : encargado en la formulación de demandas,  procuración de expedientes e interposición de recursos.
+                Referencia/ Contacto: Rodrigo Giordano Lerena Tel: 351(15)5737428</p>
+
+            <p> &nbsp;•	Auxiliar administrativo
+                Semina S.A. (Justiniano Posse, Argentina)
+                20/10/2016 - a la Actualidad. Encargado en la presentación de los estados contables y asambleas, por ante Inspección General de Personas Jurídicas.
+                    
+                Referencia/ Contacto: Juan José Cesaretti (Presidente) tel:3537(15)595100.
+                </p>
+        </div>
+        <div class="row">
+            <h6>Idiomas</h6>
+            <br>
+            <p> &nbsp;Inglés <br> </p>
+
+              <p>  •	Conversación: Nivel intermedio <br>
+                •	Lectura: Nivel intermedio <br>
+                •	Escritura: Nivel intermedio  <br>
+                </p>
+
+            <p> &nbsp;Portugués <br></p>
+
+              <p>  •	Conversación: Nivel básico <br>
+                •	Lectura: Nivel básico <br>
+                •	Escritura: Nivel básico <br>
+                
+</p>
+        </div>
+        <div class="row">
+            <h6>Ponencias</h6>
+            <br>
+            <p> &nbsp;XV Jornadas Argentinas De Derecho Procesal Constitucional<br>
+
+                •Facultad de Derecho de la  Universidad de Buenos Aires – U.B.A
+                10/08/2017 y 11/08/2017. En calidad de  Asistente y Ponente.
+                <br>
+                </p>
+
+                <br>
+                <p> &nbsp;Jornada Por el Mes Internacionales del Cuidado de la Fertilidad<br>
+
+                    Faculta de Ciencias Medicas de la Universidad Nacional de Córdoba IIº Cátedra de la Clínica Ginecológica - Instituto Universitario de Medicina Fertilidad.
+01/06/2018. En calidad de Disertante.
+
+                    <br>
+                    </p>
+                
+        </div>
+        <div class="row">
+            <h6> Formación Complementaria </h6><br>
+            <p>Curso de dactilografía </p>
+            <p> &nbsp;•Academia Santo Domingo – Córdoba 
+                11/03/2015 – 12/05/2015. Duración  diecinueve (19) horas  
+                El curso es un tutorial que tiene por objeto perfeccionar el arte de la escritura por computador sin la necesidad de observar el monitor. 
+                </p><br>
+            <p>Curso de Office avanzado </p>
+            <p> &nbsp;•Academia Santo Domingo – Córdoba 
+                02/03/2015 – 15/06/2015. Duración cuarenta y ocho (48) horas 
+                El curso permite el mejor manejo de herramientas informáticas. </p><br>
+                    <p>Taller Practico de Derecho Aeronáutico</p>
+            <p> &nbsp;•Universidad Nacional de Córdoba - Facultad de Derecho y Ciencias 	Sociales - Derecho de la Navegación, Transporte y Comunicaciones.
+                        22/09/2014.Duracion siete (7) horas cátedras. En calidad de asistente.</p><br>
+            <br>
+            <p>Curso Escuela de práctica Jurídica "Procedimiento de 	Sucesiones"</p>
+            <p> &nbsp;Colegio de Abogados de Córdoba - Escuela de Práctica Jurídica.
+                01/03/2017-01/07/2017. Duración veintiocho(28) horas cátedras.
+                En calidad de asistente.
+            </p><br>
+            <br>
+            <p>Curso Escuela de práctica Jurídica "Procedimiento Societario"</p>
+            <p> &nbsp;Colegio de Abogados de Córdoba - Escuela de Práctica Jurídica.
+                01/03/2018-01/07/2017. Duración veintiocho(28) horas cátedras.
+                    En calidad de asistente.
+                
+            </p><br>
+            <br>
+            <p>Seminario "Autonomía de la voluntad en las relaciones de jurídicas familiares"</p>
+            <p> &nbsp;Facultad de Derecho de la Universidad Nacional de Córdoba - Centro de Investigaciones Jurídicas y Sociales.
+                02/05/2017. Duración dos (2) horas de cursado.
+                En calidad de asistente.
+                
+            </p><br>
+            <br>
+            <p>Curso "Aprendiendo a invertir en la bolsa. Aspectos jurídicos y contables"</p>
+            <p> &nbsp;Colegio de Abogados de Córdoba - Sala de derecho corporativo y financiero del instituto de estudios juridicos
+                15/04/2018 -16/05/2018. Duracion ocho (8) horas.
+                En calidad de asistente.
+                
+            </p><br>
+            <br>
+            
+        </div>
+        <div class="row">
+            <h6> 
+                Habilidades específicas
+                </h6><br>
+                <p> &nbsp; •Uso de diferentes navegadores informáticos (Windows, Linux, etc.), así como de sus diferentes versiones (Windows xp, vista, 8,etc.). </p><br>
+                <p> &nbsp; •Interpretación de balances, libros diarios u otros instrumentos contables.  </p><br>
+                <p> &nbsp; •Contratación rural en general.</p><br>
+            <br>
+        </div>
+    </div>
+    
+</div>
+
+
+</ng-template> -->
 
 <footer class="footer footer-black">
 	<div class="container">
