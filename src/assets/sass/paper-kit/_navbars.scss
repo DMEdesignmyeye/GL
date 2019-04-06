@@ -8,6 +8,7 @@
     }
 }
 .navbar{
+    
     border: $none;
     font-size: $font-size-base;
     transition: all 0.4s;
@@ -22,7 +23,7 @@
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
-        font-size: $font-size-base;
+        font-size:90px;
         color: $default-color;
         text-transform: uppercase;
     }
