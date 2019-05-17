@@ -16,10 +16,14 @@ export class TeamsComponent implements OnInit {
   
     constructor(private modalService: NgbModal) {} 
     ngOnInit() {
+        var body = document.getElementsByTagName('body')[0];
+        body.classList.add('teams');
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.add('navbar-transparent');
     }
     ngOnDestroy(){
+        var body = document.getElementsByTagName('body')[0];
+        body.classList.remove('teams');
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');
     }

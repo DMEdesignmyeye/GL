@@ -15,27 +15,27 @@
         <div class="collapse navbar-collapse" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" >
-                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px">inicio</a>
+                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px; font-family: 'Oswald', sans-serif;">inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/examples/discover']" style="font-size: 16px">Visión</a>
+                    <a class="nav-link" [routerLink]="['/examples/discover']" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Visión</a>
                 </li>
                 <div ngbDropdown class="nav-item dropdown">
                     <div class="nav-link dropdown-toggle"  style="font-size: 16px ; font-family: 'Oswald', sans-serif;" ngbDropdownToggle>Areas</div>
                     <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger" >
-                        <a class="dropdown-item" [routerLink]="['/examples/area1']"><i
+                        <a class="dropdown-item"style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area1']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Administrativo</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area2']"><i
+                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area2']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Civil</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area3']"><i
+                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area3']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Comercial</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area4']"><i
+                        <a class="dropdown-item"style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area4']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Derecho constitucional</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area5']"><i
+                        <a class="dropdown-item"style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area5']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Familia</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area6']"><i
+                        <a class="dropdown-item"style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area6']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Laboral</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area7']"><i
+                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area7']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Propiedad Intelectual</a>
                         <!--     <a class="dropdown-item" [routerLink]="['/examples/ecommerce']"><i class="nc-icon nc-send"></i>&nbsp; Ecommerce</a>
                         <a class="dropdown-item" [routerLink]="['/examples/landing']"><i class="nc-icon nc-spaceship"></i>&nbsp; Landing</a>
@@ -51,17 +51,17 @@
                 <div ngbDropdown class="nav-item dropdown">
                     <div class="nav-link dropdown-toggle" style="font-size: 16px ;font-family: 'Oswald', sans-serif;" ngbDropdownToggle>Juriprudencia destacada</div>
                     <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
-                        <a class="dropdown-item" [routerLink]="['/examples/area9']"><i
+                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area9']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Casos de éxito</a>
-                        <a class="dropdown-item" [routerLink]="['/examples/area8']"><i
+                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area8']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Novedades</a>
                     </div>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/examples/teams']" style="font-size: 16px">Nosotros</a>
+                    <a class="nav-link" [routerLink]="['/examples/teams']" style="font-size: 15px ; font-family: 'Oswald', sans-serif;">Nuestro Equipo</a>
 
                 <li class="nav-item">
-                    <a class="nav-link" (click)="open(Login, '')" style="font-size: 16px">Contácto</a>
+                    <a class="nav-link" (click)="open(Login, '')" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contácto</a>
                 </li>
                 
 <ng-template #Login let-c="close" let-d="dismiss">
@@ -73,7 +73,7 @@
     <div class="logo-container">
         <img src="src/assets/img/logo.png" alt="" style="box-shadow: none !important;width: 18% !important; z-index: 5 !important; color:black">
     </div>
-        <h3 class="modal-title text-center">Contáctenos</h3>
+        <h3 class="modal-title text-center" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contáctenos</h3>
         <p>Escríbanos su consulta</p>
     </div>
    <form name="form" (ngSubmit)="f.form.valid && onSubmit(f.value)" #f="ngForm" novalidate>
