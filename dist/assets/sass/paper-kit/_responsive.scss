@@ -359,7 +359,7 @@
             margin-bottom: -35px;
         }
         .presentation-title{
-            font-size: 5em;
+            font-size: 2em;
         }
         .presentation-subtitle{
             margin-top: 40px;
@@ -791,7 +791,7 @@
     .presentation-page{
         .section-components{
             .basic-container{
-                margin-left: 5em;
+                margin-left: 1em;
             }
         }
     }
@@ -842,7 +842,7 @@
         }
     }
     .presentation-page .presentation-title {
-        font-size: 4em;
+        font-size: 2em;
     }
     .presentation-page .title-brand .type {
         font-size: 12px;
@@ -916,7 +916,7 @@
 @media (max-width: 1200px){
     .presentation-page{
         .presentation-title{
-            font-size: 7em;
+            font-size: 3em;
         }
         .title-brand{
             max-width: 650px;
@@ -957,7 +957,10 @@
             }
         }
     }
-    .full-screen.login{
+    .presentation-title{
+        font-size: 1em;
+        }   
+         .full-screen.login{
         .card.card-register{
             margin-bottom: 20px;
         }
