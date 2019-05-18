@@ -15,10 +15,10 @@
         <div class="collapse navbar-collapse" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" >
-                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px; font-family: 'Oswald', sans-serif;">inicio</a>
+                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px; font-family: 'Oswald', sans-serif;">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/examples/discover']" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Visión</a>
+                    <a class="nav-link" [routerLink]="['/examples/discover']" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Misión</a>
                 </li>
                 <div ngbDropdown class="nav-item dropdown">
                     <div class="nav-link dropdown-toggle"  style="font-size: 16px ; font-family: 'Oswald', sans-serif;" ngbDropdownToggle>Areas</div>
@@ -35,8 +35,12 @@
                                 class="nc-icon nc-bank"></i>&nbsp; Familia</a>
                         <a class="dropdown-item"style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area6']"><i
                                 class="nc-icon nc-bank"></i>&nbsp; Laboral</a>
-                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area7']"><i
-                                class="nc-icon nc-bank"></i>&nbsp; Propiedad Intelectual</a>
+                                <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area7']"><i
+                                        class="nc-icon nc-bank"></i>&nbsp; Propiedad Intelectual</a>
+                                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/ecommerce']"><i
+                                                class="nc-icon nc-bank"></i>&nbsp; Recupero de carteras en Mora
+                                            </a>
+
                         <!--     <a class="dropdown-item" [routerLink]="['/examples/ecommerce']"><i class="nc-icon nc-send"></i>&nbsp; Ecommerce</a>
                         <a class="dropdown-item" [routerLink]="['/examples/landing']"><i class="nc-icon nc-spaceship"></i>&nbsp; Landing</a>
                         <a class="dropdown-item" [routerLink]="['/examples/login']"><i class="nc-icon nc-lock-circle-open"></i>&nbsp; Login</a>
@@ -52,17 +56,16 @@
                     <div class="nav-link dropdown-toggle" style="font-size: 16px ;font-family: 'Oswald', sans-serif;" ngbDropdownToggle>Juriprudencia destacada</div>
                     <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right dropdown-danger">
                         <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;"[routerLink]="['/examples/area9']"><i
-                                class="nc-icon nc-bank"></i>&nbsp; Casos de éxito</a>
-                        <a class="dropdown-item" style="font-size: 16px; font-family: 'Oswald', sans-serif;" [routerLink]="['/examples/area8']"><i
-                                class="nc-icon nc-bank"></i>&nbsp; Novedades</a>
+                                class="nc-icon nc-bank"></i>&nbsp; Casos de éxito</a> 
                     </div>
                 </div>
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/examples/teams']" style="font-size: 15px ; font-family: 'Oswald', sans-serif;">Nuestro Equipo</a>
-
-                <li class="nav-item">
-                    <a class="nav-link" (click)="open(Login, '')" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contácto</a>
                 </li>
+                
+                <li class="nav-item">
+                        <a class="nav-link" (click)="open(Login, '')" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contácto</a>
+                    </li>
                 
 <ng-template #Login let-c="close" let-d="dismiss">
     <div class="modal-header modal-register no-border-header text-center">
@@ -71,7 +74,7 @@
         </button> 
         
     <div class="logo-container">
-        <img src="src/assets/img/logo.png" alt="" style="box-shadow: none !important;width: 18% !important; z-index: 5 !important; color:black">
+        <img src="src/assets/img/logo.png" alt="" style="width: 18% !important; z-index: 51 !important; ">
     </div>
         <h3 class="modal-title text-center" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contáctenos</h3>
         <p>Escríbanos su consulta</p>
