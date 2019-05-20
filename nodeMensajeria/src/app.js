@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors())
 app.use(function (req, res, next) {
 
-res.setHeader('Access-Control-Allow-Origin','https://localhost:3030');
+res.setHeader('Access-Control-Allow-Origin','https://giordanolerena.com:3038');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); 

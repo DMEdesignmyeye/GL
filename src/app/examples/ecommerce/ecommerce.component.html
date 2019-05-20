@@ -1,676 +1,184 @@
-<div class="page-header" style="background-image: url('./assets/img/ecommerce/balmain_runway.jpg');">
-    <div class="filter"></div>
-    <div class="content-center">
-        <div class="container text-center">
-            <h1>Brace yourself!</h1>
-            <h3>25% Off and Free global delivery for all products</h3>
-        </div>
-    </div>
-</div>
-
 <div class="wrapper">
- <div class="section latest-offers">
-       <div class="container">
-           <h3 class="section-title">Latest Offers</h3>
-           <div class="row">
-                <div class="col-md-4">
-                    <div class="card card-product card-plain">
-                        <div class="card-image">
-                            <a href="#paper-kit">
-                                <img src="./assets/img/ecommerce/balmain_5.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                            </a>
-                            <div class="card-body">
-                                <div class="card-description">
-                                    <h5 class="card-title">Green Velvet Dress</h5>
-                                    <p class="card-description">This is a limited edition dress for the fall collection. Comes in 3 colours.</p>
-                                </div>
-                                <div class="price">
-                                    <s>3.520 &euro;</s> <span class="text-danger">2.900 &euro;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                <div class="col-md-4">
-                    <div class="card card-product card-plain">
-                        <div class="card-image">
-                            <a href="#paper-kit">
-                                <img src="./assets/img/ecommerce/balmain_3.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                            </a>
-                            <div class="card-body">
-                                <div class="card-description">
-                                    <h5 class="card-title">Crepe and Organza Dress</h5>
-                                    <p class="card-description">This is a limited edition dress for the fall collection. Comes in 3 colours.</p>
-                                </div>
-                                <div class="price">
-                                    <s>2.675 &euro;</s> <span class="text-danger">2.000 &euro;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                <div class="col-md-4">
-                    <div class="card card-product card-plain">
-                        <div class="card-image">
-                            <a href="#paper-kit">
-                                <img src="./assets/img/ecommerce/balmain_4.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                            </a>
-                            <div class="card-body">
-                                <div class="card-description">
-                                    <h5 class="card-title">Lace Mini Dress</h5>
-                                    <p class="card-description">This is a limited edition dress for the fall collection. Comes in 3 colours.</p>
-                                </div>
-                                <div class="price">
-                                    <s>3.915 &euro;</s> <span class="text-danger">3.125 &euro;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-           </div>
-       </div>
-</div><!-- section -->
-
-<div class="section section-gray">
-       <div class="container">
-           <h3 class="section-title">Find what you need</h3>
-           <div class="row">
-                <div class="col-md-3">
-                    <div class="card card-refine">
-                        <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one">
-                            <ngb-panel id="config-panel-one">
-                                <ng-template ngbPanelTitle>
-                                    <h5 class="mb-0 panel-title">
-                                        <a class="collapsed">
-                                            Price Range
-                                            <i class="nc-icon nc-minimal-down"></i>
-                                        </a>
-                                    </h5>
-                                </ng-template>
-                                <ng-template ngbPanelContent>
-                                    <nouislider class="slider slider-info" [connect]="true" [min]="0" [max]="10000" [step]="10" [(ngModel)]="doubleSlider" [tooltips]="true"></nouislider>                                </ng-template>
-                            </ngb-panel>
-                            <ngb-panel>
-                                <ng-template ngbPanelTitle>
-                                    <h5 class="mb-0 panel-title">
-                                        <a class="collapsed">
-                                            Clothing
-                                            <i class="nc-icon nc-minimal-down"></i>
-                                        </a>
-                                    </h5>
-                                </ng-template>
-                                <ng-template ngbPanelContent>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="" checked>
-                                            Blazers
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Casual Shirts
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Formal Shirts
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Jeans
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Polos
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Pyjamas
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Shorts
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Trousers
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                </ng-template>
-                            </ngb-panel>
-                            <ngb-panel>
-                                <ng-template ngbPanelTitle>
-                                    <h5 class="mb-0 panel-title">
-                                        <a class="collapsed">
-                                            Designer
-                                            <i class="nc-icon nc-minimal-down"></i>
-                                        </a>
-                                    </h5>
-                                </ng-template>
-                                <ng-template ngbPanelContent>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="" checked>
-                                            All
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Acne Studio
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Alex Mill
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Alexander McQueen
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Alfred Dunhill
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            AMI
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Berena
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Berluti
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Burberry Prorsum
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Berluti
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Calvin Klein
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Club Monaco
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Dolce & Gabbana
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Gucci
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Kolor
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Lanvin
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Loro Piana
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Massimo Alba
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                </ng-template>
-                            </ngb-panel>
-                            <ngb-panel>
-                                <ng-template ngbPanelTitle>
-                                    <h5 class="mb-0 panel-title">
-                                        <a class="collapsed">
-                                            Colour
-                                            <i class="nc-icon nc-minimal-down"></i>
-                                        </a>
-                                    </h5>
-                                </ng-template>
-                                <ng-template ngbPanelContent>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="" checked>
-                                            All
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Blue
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Brown
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Gray
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Green
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Neutrals
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Purple
-                                            <span class="form-check-sign"></span>
-                                        </label>
-                                    </div>
-                                </ng-template>
-                            </ngb-panel>
-                        </ngb-accordion>
-                    </div> <!-- end card -->
-                </div>
-
-                <div class="col-md-9">
-                    <div class="products">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_1.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">One Shoulder Dress</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>2.900 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">Stretch-Knit Dress</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>1.700 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">Chrystal Sheer Dress</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>1.500 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_2.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">One Shoulder Dress</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>2.600 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_8.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">Glass Beads Skirt</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>7.500 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="card card-product card-plain">
-                                    <div class="card-image">
-                                        <a href="#paper-kit">
-                                            <img src="./assets/img/ecommerce/balmain_8.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-                                        </a>
-                                        <div class="card-body">
-                                            <div class="card-description">
-                                                <h5 class="card-title">Velvet Mini Dress</h5>
-                                                <p class="card-description">Dresses & Skirts</p>
-                                            </div>
-                                            <div class="price">
-                                                <h5>3.500 &euro;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-3 offset-md-4">
-                                  <button rel="tooltip" title="This is a morphing button" class="btn btn-round btn-outline-default" id="successBtn" data-toggle="morphing" data-rotation-color="gray">Load more...</button>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-           </div>
-       </div>
-</div><!-- section -->
-
-
- <div class="section section-blog">
-       <div class="container">
-           <div class="row">
-                <div class="col-md-4">
-                    <div class="card card-blog">
-                        <div class="card-image">
-                            <a href="#pablo">
-                                <img class="img img-raised" src="./assets/img/sections/miguel-perales.jpg">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-category text-info">Enterprise</h6>
-                            <h5 class="card-title">
-                                <a href="#pablo">LinkedIn’s new desktop app arrives</a>
-                            </h5>
-                            <p class="card-description">
-                                LinkedIn is today launching its official desktop application for Windows 10, allowing the professional social networking service to... <br>
-                            </p>
-                            <hr>
-                            <div class="card-footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                       <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="..." class="avatar img-raised">
-                                       <span>Mike John</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 5 min read
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-blog">
-                        <div class="card-image">
-                            <a href="#pablo">
-                                <img class="img img-raised" src="./assets/img/sections/roger-keller.jpg">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-category text-success">
-                                Startups
-                            </h6>
-                            <h5 class="card-title">
-                                <a href="#pablo">MIT’s Cheetah 3 robot is built to save lives</a>
-                            </h5>
-                            <p class="card-description">
-                                The latest version of MIT’s Cheetah robot made its stage debut today at TC Sessions: Robotics in Cambridge, Mass. It’s a familiar project... <br>
-                            </p>
-                            <hr>
-                            <div class="card-footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                       <img src="./assets/img/faces/kaci-baum-2.jpg" alt="..." class="avatar img-raised">
-                                       <span>Nickie Kelly</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 5 min read
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-blog">
-                        <div class="card-image">
-                            <a href="#pablo">
-                                <img class="img img-raised" src="./assets/img/sections/joshua-earlesz.jpg">
-                            </a>
-                        </div>
-
-                        <div class="card-body">
-                            <h6 class="card-category text-danger">
-                                <i class="fa fa-free-code-camp" aria-hidden="true"></i> Enterprise
-                            </h6>
-                            <h5 class="card-title">
-                                <a href="#pablo">Lionel Richie says “Hello” to startup investors</a>
-                            </h5>
-                            <p class="card-description">
-                                Because developing a doctor-on-demand service that would allow personalized medical visits, booked through an app on a user’s phone is... <br>
-                            </p>
-                            <hr>
-                            <div class="card-footer">
-                                <div class="author">
-                                    <a href="#pablo">
-                                       <img src="./assets/img/faces/erik-lucatero-2.jpg" alt="..." class="avatar img-raised">
-                                       <span>Mike John</span>
-                                    </a>
-                                </div>
-                                <div class="stats">
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 5 min read
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       </div>
-</div><!-- section -->
-<div class="subscribe-line subscribe-line-black">
-     <div class="container">
-        <div class="row">
-             <div class="col-md-9 col-sm-8">
-                <form class="">
-                     <div class="form-group">
-                          <input type="text" value="" class="form-control" placeholder="Enter your email...">
-                     </div>
-                 </form>
-             </div>
-             <div class="col-md-3 col-sm-4">
-                 <button type="button" class="btn btn-neutral btn-block btn-lg">Join Newsletter</button>
-             </div>
+    <div class="page-header page-header-xs">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8"
+            style="background-image: url('assets/img/sections/a9.jpg') ;">
         </div>
-     </div>
-</div>
-
-<footer class="footer footer-big">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-9">
-                <div class="links">
-                    <ul class="uppercase-links">
-                        <li>
-                            <a href="#paper-kit">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paper-kit">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paper-kit">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paper-kit">
-                               Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paper-kit">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paper-kit">
-                               Contact
-                            </a>
-                        </li>
-
-
-                    </ul>
-                    <hr />
-
-                    <div class="copyright">
-                        © {{data | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim
-                    </div>
-                </div>
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="motto">
+                <!-- <h1 class="title-uppercase text-center">Derecho Civil</h1> -->
+                <!-- <a href="javascrip: void(0);"><h2 class="title-uppercase text-center">Derecho Civil</h2></a>
+                    <h3 class="text-center">Make your mark with a new design.</h3> -->
+                <br />
+                <!-- <a href="#pablo" class="btn btn-warning btn-round btn-lg">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i> Share Article
+                    </a> -->
             </div>
-
-            <div class="col-md-4 ml-auto col-sm-2">
-                <div class="social-area">
-                    <a href="#facebook" class="btn btn-neutral btn-round btn-just-icon btn-facebook">
-                       <i class="fa fa-facebook" aria-hidden="true"></i>
-                   </a>
-                    <a href="#twitter" class="btn btn-neutral btn-just-icon btn-round btn-twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="#google" class="btn btn-neutral btn-just-icon btn-round btn-google">
-                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                    </a>
-                    <a href="#pin" class="btn btn-neutral btn-just-icon btn-round btn-pinterest">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
-</footer>
+    <div class="features-30" style="padding:0px">
+        <div class="container col-md-12">
+            <div class="row" style="margin-left:-27px ; margin-right: -27px">
+
+                <div class="col-md-6 ml-auto" style="
+                overflow: scroll !important;
+                overflow: hidden;
+                max-height: 28.6em; /* (Number of lines you want visible) * (line-height) */
+                line-height: 1.2em;
+                text-align:justify;
+                ">
+                    <div class="article-content">
+                        <h2 class="title-uppercase">Recupero de carteras en mora Intelectual</h2>
+                        <hr style="height: 10px; background-color: #683a12;width: 100%;">
+                  
+                        <div class="article-content">
+                            <h6 class="title-uppercase">¿Que es el derecho administrativo?</h6>
+                            <p>
+                                El derecho administrativo, es aquella rama o porción del derecho, que tiene un enfoque
+                                prioritariamente
+                                desde “lo publico”, es decir esta especialidad del derecho, se encarga básicamente de
+                                las distintas
+                                relaciones jurídicas o problemáticas, que surgen de la actividad del Estado y
+                                especialmente sus
+                                funciones administrativas.
+                            </p>
+
+                            <p>
+                                En otras palabras, el derecho administrativo es aquel que comprende la organización y el
+                                funcionamiento
+                                de toda forma de administración pública. Por extensión, suele ser también aplicable a la
+                                actuación
+                                materialmente administrativa de los demás poderes del Estado y de todos esos entes del
+                                sector público. Y
+                                todo ello, desde la doble perspectiva de procurar la eficacia de las Administraciones
+                                pero también
+                                garantizar los derechos de los particulares en sus relaciones con ellas.
+                            </p>
+                          
+                        </div>
+                        <h6>Generalmente, se caracteriza por ser:</h6>
+                        <p><strong>Común:</strong> tiene esta característica en todas las actividades (municipales,
+                            tributarias,
+                            etc.) y sus principios son aplicables a diversas materias.</p>
+                        <p><strong>Autónomo: </strong> tiene sus propios principios generales.</p>
+                        <p><strong>Local:</strong> derecho de naturaleza local, por la organización política de cada
+                            país.</p>
+                        <p><strong>Exorbitante:</strong> excede la órbita del derecho privado, por lo que en donde hay
+                            una
+                            organización estatal, hay derecho administrativo.</p>
+                        <h6><strong>¿Qué ocurre en Argentina?</strong></h6>
+                        <p>El Derecho administrativo argentino, al tratarse de un Estado federal, está regulado
+                            primordialmente por
+                            las normas de cada provincia. Por lo que sólo se hará referencia a la faz nacional del
+                            mismo, es decir,
+                            a las normas que involucran a la Administración pública nacional centralizada y
+                            descentralizada, a los
+                            entes autárquicos, a las sociedad y empresas del Estado, a las sociedades anónimas con
+                            participación
+                            estatal mayoritaria y a los entes de derecho público no estatales del ámbito federal.
+                        </p>
+
+                        <!-- <a>
+                        <div class="card" data-radius="none"
+                            style="background-image: url('./assets/img/sections/ad4.jpg');"></div>
+                        <p class="image-thumb text-center">Despcrion de foto opcional</p>
+                    </a> -->
+                    <p>
+                        En Estudio Giordano Lerena y Asociados contamos con profesionales idóneos en el área,
+                        capaces de
+                        dar soluciones eficaces, al más amplio cumulo de problemáticas.
+                    </p>
+                    <br>
+                    <p>
+                        Nuestro equipo, posee una marcada experiencia en el rubro, la cual ha sido vertida en las
+                        múltiples intervenciones realizadas, las cuales van desde la simple formulación de un
+                        descargo
+                        hasta, por ejemplo el asesoramiento jurídico en la Concesión de servicios públicos
+                        estatales.
+                        <br>
+                    </p>
+
+                    </div>
+
+                    <hr class="blockquote">
+                    <p style="text-align: center">¿Qué averiguar más sobre derecho administrativo? Contactame.</p>
+                    <blockquote class="blockquote">
+                        <div class="container">
+                            <div class="row">
+                                <div class="media">
+                                    <a class="pull-left" href="#paper-kit">
+                                        <div class="avatar big-avatar">
+                                            <img class="media-object" alt="Fernando" src="./assets/img/faces/fer.png">
+                                        </div>
+                                    </a>
+                                    <div class="col-md-12 ml-auto mr-auto">
+                                        <h6 class="media-heading">Fernando Cesaretti</h6>
+                                        <!-- <div class="pull-right">
+                                            <a href="#paper-kit" class="btn btn-default btn-round "> <i class="fa fa-reply"></i>
+                                                Follow</a>
+                                        </div> -->
+                                        <p>E-Mail: fernandocesaretti0@gmail.com</p>
+                                        <p>Teléfono: (3537) 667744</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                </div>
+
+                <div class="page-header page-header-xs col-md-5"
+                    style="background-color:rgba(255, 255, 255, 0)">
+                    <div class="page-header-image" style="background-image: url('assets/img/sections/a10.jpg') ; background-size:cover">
+                    </div>
+
+                </div>
+                <!-- <div class="col-md-5 ml-auto mr-auto" style=" background: url('assets/img/sections/ad3.jpg'); background-size: cover"> -->
+                <!-- <div class="container">
+                    <img src="assets/img/sections/a1.jpg" 
+                        style="background-size:cover ;height: 450px ;width: 500px !important;padding-top: 7%" />
+                </div>  -->
+                <!-- <blockquote class="blockquote">
+                        <p>"En tanto que en la vida privada los derechos y obligaciones se crean casi siempre por vía
+                            contractual, la Administración debe, en interés del servicio público, poder imponer,
+                            unilateralmente, sin necesidad de previo pronunciamiento judicial, obligaciones a los
+                            particulares,
+                            y su decisión debe ser tenida como jurídicamente válida en tanto que el interesado no
+                            promueva su
+                            anulación por el juez"</p>
+                        <footer>- Prosper Weil <cite title="Source Title"> Derecho Administrativo 1986, Civitas, pág.
+                                50color.</cite></footer>
+                    </blockquote> -->
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+    </div>
 
 
 
+    <footer class="footer footer-black">
+        <div class="container">
+            <div class="row">
+                <div class="credits mr-auto">
+                    <div class="copyright">
+                        <a href="https://dmedigital.com.ar">&nbsp; Copyrights &copy; 2019 - Todos los derechos
+                            reservados -
+                            GL Asociados</a><br>
+                        <small style="font-size:10px !important"><a href="#">Términos de uso </a> / <a href="#">Politica
+                                y
+                                Privacidad</a></small>
 
-</div> <!-- wrapper -->
+                    </div>
+                </div>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        © 2019 - Desarrollado por <i class="fa fa-eye heart"></i> DME Digital
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
