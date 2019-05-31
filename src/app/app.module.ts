@@ -17,7 +17,6 @@ import { MessageService } from './services/message.service';
 import { HttpClientModule } from '@angular/common/http'; 
 import { ToastrModule} from 'ng6-toastr-notifications';
 import { BrowserModule } from '@angular/platform-browser';
-import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
     declarations: [
@@ -28,10 +27,6 @@ import { AgmCoreModule } from '@agm/core';
         BrowserAnimationsModule,
         NgbModule.forRoot(),
         FormsModule,
-        
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyDN2KKTgPz1bSMZp_keZNV6Sc9ns8d1QWA'
-        }),
         RouterModule,
         AppRoutingModule,
         PresentationModule,

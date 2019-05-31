@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" >
-                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px; font-family: 'Oswald', sans-serif;">Inicsio</a>
+                    <a class="nav-link" [routerLink]="['/presentation']"  style="font-size: 16px; font-family: 'Oswald', sans-serif;">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/examples/discover']" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Misión</a>
@@ -83,12 +83,8 @@
     <div class="logo-container">
         <img src="src/assets/img/logo.png" alt="" style="width: 18% !important; z-index: 51 !important; ">
     </div>
-        <h3 class="modal-title text-center" style="font-size: 36px">Contáctenos</h3>
-        <p style="font-weight: bold ; font-size:24px">Escríbanos su consulta</p>
-         
-        <p style="font-weight: bold">Dirección: Corro 245 - 8 C </p>
-        <p style="font-weight: bold">Teléfono: (0351) - 4262954</p>
-        <p style="font-weight: bold">estudiogiordanolerena@gmail.com </p>
+        <h3 class="modal-title text-center" style="font-size: 16px; font-family: 'Oswald', sans-serif;">Contáctenos</h3>
+        <p>Escríbanos su consulta</p>
     </div>
    <form name="form" (ngSubmit)="f.form.valid && onSubmit(f.value)" #f="ngForm" novalidate>
     <div class="modal-body">
@@ -124,15 +120,7 @@
         </div>
 
     </div> 
-    <div class="card-footer">
-          
-        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles">
-                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-            </agm-map>
-             
-        </div>
 </form>
-
 </ng-template>
                <!--  <ng-template #Login let-c="close" let-d="dismiss">
                     <div class="card card-login card-plain">
